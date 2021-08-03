@@ -3,13 +3,13 @@ import styles from './home.module.css';
 
 function Home() {
   return (
-    <div className='home'>
-      <div>
-        <div>
+    <div className={styles.card}>
+      <div className={styles.cardContainer}>
+        <div className={styles.deets}>
           <div className={styles.name}>Shubham Ojha</div>
           <div className={styles.title}>Web developer</div>
         </div>
-        <nav>
+        <nav className={styles.routes}>
           <ul>
             <li>
               <Link to='/'>Home</Link>
