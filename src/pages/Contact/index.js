@@ -6,7 +6,6 @@ import styles from './contact.module.css'
 import { useState } from 'react'
 
 function Contact() {
-  
   const [message, setMsg] = useState('')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -14,11 +13,11 @@ function Contact() {
   const [sending, setSendingState] = useState(false)
   const onFormSubmit = (event) => {
     event.preventDefault()
-    
+
     console.log(
       `Sending message via ${name}'s email: ${email}\nMessage is: ${message}`
     )
-    
+
     setSendingState(true)
     emailjs
       .send(
@@ -50,7 +49,6 @@ function Contact() {
     event.target.reset()
   }
 
-
   return (
     <div className={styles.card}>
       <div className={styles.cardContainer}>
@@ -61,52 +59,47 @@ function Contact() {
           />
         </Link>
         <h1>Contact Form</h1>
-        {sending && (
-        <div className={styles.formContainer}>
-          Sending...
-        </div>
-        )}
+        {sending && <div className={styles.formContainer}>Sending...</div>}
         {!sending && (
+          <form onSubmit={onFormSubmit} className={styles.formContainer}>
+            <label htmlFor='name' className={styles.formLabelContainer}>
+              <span className={styles.formLabelText}>Your Name</span>
+              <input
+                type='text'
+                name='name'
+                id='name'
+                className={styles.formInput}
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+              />
+            </label>
 
-        <form onSubmit={onFormSubmit} className={styles.formContainer}>
-          <label htmlFor='name' className={styles.formLabelContainer}>
-            <span className={styles.formLabelText}>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              id='name'
-              className={styles.formInput}
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-            />
-          </label>
+            <label htmlFor='email' className={styles.formLabelContainer}>
+              <span className={styles.formLabelText}>Your Email</span>
+              <input
+                type='email'
+                name='email'
+                id='email'
+                className={styles.formInput}
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              />
+            </label>
 
-          <label htmlFor='email' className={styles.formLabelContainer}>
-            <span className={styles.formLabelText}>Your Email</span>
-            <input
-              type='email'
-              name='email'
-              id='email'
-              className={styles.formInput}
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-            />
-          </label>
+            <label htmlFor='message' className={styles.formLabelContainer}>
+              <span className={styles.formLabelText}>Your Message</span>
+              <textarea
+                name='message'
+                id='message'
+                className={styles.formInput}
+                rows={6}
+                value={message}
+                onChange={(event) => setMsg(event.target.value)}
+              />
+            </label>
 
-          <label htmlFor='message' className={styles.formLabelContainer}>
-            <span className={styles.formLabelText}>Your Message</span>
-            <textarea
-              name='message'
-              id='message'
-              className={styles.formInput}
-              rows={6}
-              value={message}
-              onChange={(event) => setMsg(event.target.value)}
-            />
-          </label>
-
-          <input type='submit' value='Send' className={styles.submitButton} />
-        </form>
+            <input type='submit' value='Send' className={styles.submitButton} />
+          </form>
         )}
       </div>
     </div>
