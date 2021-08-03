@@ -6,13 +6,20 @@ import styles from './contact.module.css'
 import { useState } from 'react'
 
 function Contact() {
+  
+  const [message, setMsg] = useState('')
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+
+  const [sending, setSendingState] = useState(false)
   const onFormSubmit = (event) => {
     event.preventDefault()
-
+    
     console.log(
       `Sending message via ${name}'s email: ${email}\nMessage is: ${message}`
     )
-
+    
+    setSendingState(true)
     emailjs
       .send(
         creds.EMAILJS_SERVICE_ID,
@@ -26,10 +33,12 @@ function Contact() {
       )
       .then(
         function (response) {
+          setSendingState(false)
           console.log('SUCCESS!', response.status, response.text)
-          alert(`Successfully delivered to ${name}`)
+          alert(`Message delivered to ${name}`)
         },
         function (error) {
+          setSendingState(false)
           console.log('FAILED...', error)
           alert('Failed to deliver message!')
         }
@@ -41,9 +50,6 @@ function Contact() {
     event.target.reset()
   }
 
-  const [message, setMsg] = useState('')
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
 
   return (
     <div className={styles.card}>
@@ -54,8 +60,14 @@ function Contact() {
             customStyle={styles.closeIcon}
           />
         </Link>
-
         <h1>Contact Form</h1>
+        {sending && (
+        <div className={styles.formContainer}>
+          Sending...
+        </div>
+        )}
+        {!sending && (
+
         <form onSubmit={onFormSubmit} className={styles.formContainer}>
           <label htmlFor='name' className={styles.formLabelContainer}>
             <span className={styles.formLabelText}>Your Name</span>
@@ -95,6 +107,7 @@ function Contact() {
 
           <input type='submit' value='Send' className={styles.submitButton} />
         </form>
+        )}
       </div>
     </div>
   )
