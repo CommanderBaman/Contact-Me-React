@@ -1,6 +1,6 @@
-import CustomFontAwesomeIcon from '../../components/CustomFontAwesomeIcon';
-import { Link } from 'react-router-dom';
-import styles from './contact.module.css';
+import CustomFontAwesomeIcon from '../../components/CustomFontAwesomeIcon'
+import { Link } from 'react-router-dom'
+import styles from './contact.module.css'
 function Contact() {
   return (
     <div className={styles.card}>
@@ -14,7 +14,7 @@ function Contact() {
         <h1>Contact Form</h1>
       </div>
     </div>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

@@ -1,6 +1,6 @@
-import CustomFontAwesomeIcon from '../../components/CustomFontAwesomeIcon';
-import { Link } from 'react-router-dom';
-import styles from './about.module.css';
+import CustomFontAwesomeIcon from '../../components/CustomFontAwesomeIcon'
+import { Link } from 'react-router-dom'
+import styles from './about.module.css'
 
 function About() {
   return (
@@ -20,7 +20,7 @@ function About() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
-export default About;
+export default About

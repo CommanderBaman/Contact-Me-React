@@ -1,6 +1,6 @@
-import CustomFontAwesomeIcon from '../../components/CustomFontAwesomeIcon';
-import { Link } from 'react-router-dom';
-import styles from './style.module.css';
+import CustomFontAwesomeIcon from '../../components/CustomFontAwesomeIcon'
+import { Link } from 'react-router-dom'
+import styles from './style.module.css'
 
 function Error() {
   return (
@@ -15,7 +15,7 @@ function Error() {
         <div>Error! Page not found!</div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Error;
+export default Error

@@ -1,13 +1,13 @@
 import './reset.css'
 
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
-import NoMatch from './pages/404';
-import styles from './app.module.css';
-import wall from './images/wall.jpg';
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
+import NoMatch from './pages/404'
+import styles from './app.module.css'
+import wall from './images/wall.jpg'
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
         </div>
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
