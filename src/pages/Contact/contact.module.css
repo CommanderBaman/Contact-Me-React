@@ -1,13 +1,31 @@
 .card {
-  background-color: white;
   padding: 1em;
   border-radius: 1em;
   margin: auto;
-  width: 40%;
+  width: 90%;
   text-align: center;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .cardContainer {
   display: grid;
   place-items: center;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 0.25em;
+  right: 1em;
+  font-size: x-large;
+}
+
+@media only screen and (min-width: 58em) {
+  .card {
+    width: 30%;
+  }
 }
