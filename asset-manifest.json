@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/contact-me-react/static/css/main.276774b6.chunk.css",
-    "main.js": "/contact-me-react/static/js/main.1c67a754.chunk.js",
-    "main.js.map": "/contact-me-react/static/js/main.1c67a754.chunk.js.map",
-    "runtime-main.js": "/contact-me-react/static/js/runtime-main.37a511c1.js",
-    "runtime-main.js.map": "/contact-me-react/static/js/runtime-main.37a511c1.js.map",
-    "static/js/2.e4355e31.chunk.js": "/contact-me-react/static/js/2.e4355e31.chunk.js",
-    "static/js/2.e4355e31.chunk.js.map": "/contact-me-react/static/js/2.e4355e31.chunk.js.map",
-    "static/js/3.a2ee52af.chunk.js": "/contact-me-react/static/js/3.a2ee52af.chunk.js",
-    "static/js/3.a2ee52af.chunk.js.map": "/contact-me-react/static/js/3.a2ee52af.chunk.js.map",
-    "index.html": "/contact-me-react/index.html",
-    "static/css/main.276774b6.chunk.css.map": "/contact-me-react/static/css/main.276774b6.chunk.css.map",
-    "static/js/2.e4355e31.chunk.js.LICENSE.txt": "/contact-me-react/static/js/2.e4355e31.chunk.js.LICENSE.txt",
-    "static/media/avatar.13e70d25.jpg": "/contact-me-react/static/media/avatar.13e70d25.jpg",
-    "static/media/wall.48caa8f6.jpg": "/contact-me-react/static/media/wall.48caa8f6.jpg"
+    "main.css": "/Contact-Me-React/static/css/main.276774b6.chunk.css",
+    "main.js": "/Contact-Me-React/static/js/main.287ee902.chunk.js",
+    "main.js.map": "/Contact-Me-React/static/js/main.287ee902.chunk.js.map",
+    "runtime-main.js": "/Contact-Me-React/static/js/runtime-main.efa34cb8.js",
+    "runtime-main.js.map": "/Contact-Me-React/static/js/runtime-main.efa34cb8.js.map",
+    "static/js/2.c5c09bab.chunk.js": "/Contact-Me-React/static/js/2.c5c09bab.chunk.js",
+    "static/js/2.c5c09bab.chunk.js.map": "/Contact-Me-React/static/js/2.c5c09bab.chunk.js.map",
+    "static/js/3.a2ee52af.chunk.js": "/Contact-Me-React/static/js/3.a2ee52af.chunk.js",
+    "static/js/3.a2ee52af.chunk.js.map": "/Contact-Me-React/static/js/3.a2ee52af.chunk.js.map",
+    "index.html": "/Contact-Me-React/index.html",
+    "static/css/main.276774b6.chunk.css.map": "/Contact-Me-React/static/css/main.276774b6.chunk.css.map",
+    "static/js/2.c5c09bab.chunk.js.LICENSE.txt": "/Contact-Me-React/static/js/2.c5c09bab.chunk.js.LICENSE.txt",
+    "static/media/avatar.13e70d25.jpg": "/Contact-Me-React/static/media/avatar.13e70d25.jpg",
+    "static/media/wall.48caa8f6.jpg": "/Contact-Me-React/static/media/wall.48caa8f6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.37a511c1.js",
-    "static/js/2.e4355e31.chunk.js",
+    "static/js/runtime-main.efa34cb8.js",
+    "static/js/2.c5c09bab.chunk.js",
     "static/css/main.276774b6.chunk.css",
-    "static/js/main.1c67a754.chunk.js"
+    "static/js/main.287ee902.chunk.js"
   ]
 }
